@@ -40,7 +40,7 @@ Template.afBootstrapTimepicker.rendered = function () {
     var data = Template.currentData();
 
     // set field value
-    if (data.value instanceof String) {
+    if (data.value) {
       $input.timepicker('setTime', data.value);
     }
   });
