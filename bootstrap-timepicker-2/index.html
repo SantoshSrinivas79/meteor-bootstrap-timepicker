@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-timepicker.css">
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-timepicker.js"></script>
+	<script src="javascripts/main.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Bootstrap3-timepicker by acpmasquerade</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Bootstrap3-timepicker2
+			<a href='https://github.com/acpmasquerade/bootstrap3-timepicker' target=_blank class='btn btn-danger'><i class='fa fa-github fa-lg'></i></a>
+		</h1>
+          <h2>A simple timepicker component for Twitter Bootstrap</h2>
+        </header>
+
+        <hr>
+
+        <section id="main_content">
+          <h3>
+<a id="bootstrap3-timepicker" class="anchor" href="#bootstrap3-timepicker" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bootstrap3-Timepicker2</h3>
+
+<p>The Bootstrap3 flavored timepicker javascript library. Follows the fork lifecycle as 
+<a href='https://github.com/jdewit/bootstrap-timepicker' target='_blank'><code>jdewit/bootstrap-timepicker</code></a> -&gt; 
+<a href='https://github.com/m3wolf/bootstrap3-timepicker' target='_blank'><code>m3wolf/bootstrap3-timepicker</code></a></p>
+
+<h3>Download</h3>
+<p>
+          <a href="https://github.com/acpmasquerade/bootstrap3-timepicker2/zipball/master" class='btn btn-primary'>Download .zip</a>
+          <a href="https://github.com/acpmasquerade/bootstrap3-timepicker2/tarball/master" class="btn btn-danger">Download tar.gz</a>
+ </p>
+
+<h2>Default Settings (dropdown template)</h2>
+<p>
+	<pre>$("#timepicker-default").timepicker();</pre>
+	<input type='text' class='form-control input-lg' id='timepicker-default' />
+</p>
+
+<h2>24hr support
+<small>Demo using the modal template</small>
+</h2>
+<p>
+  <pre>
+  
+  $('#timepicker-24hr').timepicker({
+    minuteStep: 1,
+    template: 'modal',
+    appendWidgetTo: 'body',
+    showSeconds: true,
+    showMeridian: false,
+    defaultTime: false,
+    modalBackdrop: true
+  });
+  </pre>
+  <input type='text' class='form-control input-lg' id='timepicker-24hr' />  
+</p>
+
+<h2>All options</h2>
+<div class='panel'>
+  <table class="table table-bordered options-table table-striped">
+            <thead>
+                <tr>
+                    <th style="width: 25%;">Name</th>
+                    <th style="width: 25%;">Options / Defaults</th>
+                    <th style="widget: 50%;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>template</td>
+                    <td>
+                        'dropdown' (default)<hr> 
+                        'modal' <hr>
+                        false
+                    </td>
+                    <td>
+                        Show picker in a dropdown <hr>
+                        Show picker in a modal <hr>
+                        Don't show a widget
+                    </td>
+                </tr>
+                <tr>
+                    <td>minuteStep</td>
+                    <td>15</td>
+                    <td>Specify a step for the minute field.</td>
+                </tr>
+                <tr>
+                    <td>showSeconds</td>
+                    <td>false</td>
+                    <td>Show the seconds field.</td>
+                </tr>
+                <tr>
+                    <td>secondStep</td>
+                    <td>15</td>
+                    <td>Specify a step for the second field.</td>
+                </tr>
+                <tr>
+                    <td>defaultTime</td>
+                    <td>
+                        'current' (default) <hr>
+                        '11:45 AM' <hr>
+                        false
+                    </td>
+                    <td>
+                        Set to the current time. <hr>
+                        Set to a specific time. <hr>
+                        Do not set a default time
+                    </td>
+                </tr>
+                <tr>
+                    <td>showMeridian</td>
+                    <td>
+                        true (default) <hr>
+                        false 
+                    </td>
+                    <td>
+                        12hr mode<hr>
+                        24hr mode
+                    </td>
+                </tr>
+                <tr>
+                    <td>showInputs</td>
+                    <td>
+                        true (default) <hr>
+                        false 
+                    </td>
+                    <td>
+                        Shows the text inputs in the widget. <hr>
+                        Hide the text inputs in the widget
+                    </td>
+                </tr>
+                <tr>
+                    <td>disableFocus</td>
+                    <td>false</td>
+                    <td>Disables the input from focusing. This is useful for touch screen devices that display a keyboard on input focus.</td>
+                </tr>
+                <tr>
+                    <td>disableMousewheel</td>
+                    <td>false</td>
+                    <td>Disables the input from changing on mousewheel events</td>
+                </tr>
+                <tr>
+                    <td>modalBackdrop</td>
+                    <td>false</td>
+                    <td>Show modal backdrop.</td>
+                </tr>
+            </tbody>
+        </table>
+</div>
+
+
+<hr />
+<h3>
+<a id="maintainer" class="anchor" href="#maintainer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact</h3>
+
+<p><a href="https://github.com/acpmasquerade" class="user-mention">@acpmasquerade</a><br />
+<a href="https://github.com/sparrowsms" class="user-mention">@sparrowsms</a><br />
+<a href="https://github.com/picovico" class="user-mention">@picovico</a></p>
+        </section>
+
+        <footer>
+          This fork of Bootstrap3-timepicker is maintained by <a href="https://github.com/acpmasquerade">acpmasquerade</a><br>
+          and this page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
