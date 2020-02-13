@@ -7,8 +7,8 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.addFiles([
-    'bootstrap-timepicker/css/bootstrap-timepicker.css',
-    'bootstrap-timepicker/js/bootstrap-timepicker.js'
+    'bootstrap-timepicker-2/css/bootstrap-timepicker.css',
+    'bootstrap-timepicker-2/js/bootstrap-timepicker.js'
   ], ['client']);
   api.use(['templating@1.1.1'],'client');
   api.addFiles(['timepicker.js'],'client');
